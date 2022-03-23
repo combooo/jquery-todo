@@ -22,13 +22,9 @@ $(function(){
 
         $('.delete').on('click', function() {
             var $parent = $(this).parent();
-
             $parent.css('animation', 'fadeOut .1s linear');
-
-            setTimeout(function() {
-                $parent.remove();
-                displayNotification();
-            }, 0);
+            $parent.remove();
+            displayNotification();
         })
     })
 })
